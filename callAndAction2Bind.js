@@ -1,7 +1,7 @@
 const normalPerson = {
     firstName: 'Rahim',
     lastName: 'Uddin',
-    salary: 15000,
+    salary: 1500090,
     getFullName: function (){
         console.log(this.firstName, this.lastName);
     },
