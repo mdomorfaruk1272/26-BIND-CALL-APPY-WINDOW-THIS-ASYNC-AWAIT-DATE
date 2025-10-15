@@ -1,9 +1,9 @@
 const normalPerson = {
     firstName: 'Rahim',
-    lastname: 'Uddin',
+    lastName: 'Uddin',
     salary: 15000,
     getFullName: function (){
-        console.log(this.firstName, this.lastname);
+        console.log(this.firstName, this.lastName);
     },
     chargeBill: function (amount){
         console.log(this);
@@ -26,4 +26,4 @@ const heroChargeBill = normalPerson.chargeBill.bind(heroPerson);
 heroChargeBill(2000);
 heroChargeBill(3000);
 console.log(heroPerson.salary);
-console.log(normalPerson.salary)
+console.log(normalPerson.salary);
