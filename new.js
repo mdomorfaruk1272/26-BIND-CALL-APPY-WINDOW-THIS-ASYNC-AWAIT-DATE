@@ -1,5 +1,4 @@
 class Person {
-    
     constructor(firstName, lastName, salary){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -7,26 +6,34 @@ class Person {
     }
 }
 
-/**
- * new keyword is used to create an object form a class
- */
 const heroPerson = new Person('Hero', 'Balam', 20000);
 console.log(heroPerson);
-const friendlyPerson = new Person('Hero' , 'Kalam', 25000);
+const friendlyPerson = new Person('Hero', 'Kalam', 25000);
 console.log(friendlyPerson);
 
 
 /**
- *  old way of declaration class / old oop
- * @param {*} firstName 
- * @param {*} lastName 
- * @param {*} salary 
+ * Old way of declearation object 
  */
-function PersonOld(firstName, lastName, salary){
+
+function Person1(firstName, lastName, salary){
     this.firstName = firstName;
     this.lastName = lastName;
     this.salary = salary;
+    this.getname = function(){
+        return this.firstName;
+    }
 }
 
-const oldPerson = new PersonOld('Grand', 'Papa', 1200);
-console.log(oldPerson);
+const oldPerson = new Person1('Grand', 'Papa', 1200);
+console.log(oldPerson)
+
+const person2 = {
+    firstName: 'Md. Omor',
+    lastName : 'Faruk',
+    getname: function(){
+        return this.firstName;
+    }
+}
+
+console.log(person2)
